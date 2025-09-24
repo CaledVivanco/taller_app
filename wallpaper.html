@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wallpaper Manager</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <style>
+    .tab-active {
+      background-color: #2563eb; /* azul */
+    }
+    .tab-inactive {
+      background-color: #374151; /* gris */
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="p-6 max-w-6xl w-full">
+    <!-- Tabs -->
+    <div class="flex gap-4 mb-6">
+      <button id="tab-explore" class="px-4 py-2 rounded-lg tab-active">Explorar</button>
+      <button id="tab-favorites" class="px-4 py-2 rounded-lg tab-inactive">Favoritos</button>
+    </div>
+
+    <!-- Grid -->
+    <div id="wallpaper-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+  </div>
+
+  <!-- Script externo -->
+  <script src="app.js"></script>
+</body>
+</html>
